@@ -1,0 +1,13 @@
+
+<router-outlet></router-outlet>
+<div>
+    <h1>father component</h1>
+    <input #fatherInput (keyup)="keyUp(fatherInput.value)"/>
+    <div>
+        <app-son-component [inputText]="inputText"
+        (emitMessage)="setMessage($event)">
+        </app-son-component>
+        <h1>mensaje de mi hijo</h1>
+        <p>{{sonMessage}}</p>
+    </div>
+</div>

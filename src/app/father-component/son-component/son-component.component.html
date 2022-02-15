@@ -1,0 +1,14 @@
+<div>
+    <h1>son component</h1>
+    <p>El hijo ahora escuchar</p>
+    <p>{{inputText}}</p>
+</div>
+<div>
+    <h1>
+        enviar mensaje al padre
+    </h1>
+    <input [(ngModel)]="message"/>
+    <button (click)="sendMessage()">Enviar a padre</button>
+</div>
+
+
